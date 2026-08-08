@@ -25,6 +25,7 @@ class LLMEngine:
         for i in range(1, config.tensor_parallel_size):
             event = ctx.Event()
             process = ctx.Process(target=ModelRunner, args=(config, i, event))
+            print(f"event:{event} process:{process}")
             process.start()
             self.ps.append(process)
             self.events.append(event)

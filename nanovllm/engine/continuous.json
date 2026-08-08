@@ -1,0 +1,2500 @@
+{
+    "id": "dpm-v3-train-0601",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-00b8a561946a1d27",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The estate contains 24 virtual machines on two hosts. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0602",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-0398efbe25102d89",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The environment separates production and test clusters under one operations team. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0603",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-05eba9063ca8281b",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The scope includes 90 virtual machines in a four-node cluster. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0604",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-088e6ee1453cce51",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The private cloud runs 220 virtual machines across two datacenters. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0605",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-08f2ea7e7680efd8",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The private cloud runs 220 virtual machines across two datacenters. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0606",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-0e4f75ff08ac8382",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The estate contains 24 virtual machines on two hosts. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0607",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-0f87be04d4a0d9fd",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A customer portal runs on virtual machines requiring a secondary recovery location. The private cloud runs 220 virtual machines across two datacenters. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0608",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-12f183b16d73ea55",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The regulated virtualization estate uses multiple clusters and delegated recovery operators. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0609",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-15514f99475f0c23",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The estate contains 24 virtual machines on two hosts. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0610",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-17a3383318b51322",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The estate contains 24 virtual machines on two hosts. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0611",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-1c37bd55656a7836",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The regulated virtualization estate uses multiple clusters and delegated recovery operators. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0612",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-1edf77f51aad0518",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The environment separates production and test clusters under one operations team. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0613",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-1fd1f9fb398626ce",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The environment separates production and test clusters under one operations team. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0614",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-21792935876e6ac2",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A customer portal runs on virtual machines requiring a secondary recovery location. The private cloud runs 220 virtual machines across two datacenters. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0615",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-21d6b5b99b455f80",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A customer portal runs on virtual machines requiring a secondary recovery location. The estate contains 24 virtual machines on two hosts. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0616",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-266f4493e3966c28",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The regulated virtualization estate uses multiple clusters and delegated recovery operators. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0617",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-29eb320958ffbda0",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The estate contains 24 virtual machines on two hosts. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0618",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-2c868cebc80468a6",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A regulated application has documented disaster-recovery runbooks for its virtual-machine tiers. The environment separates production and test clusters under one operations team. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0619",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-2d9aa53a10e4ccd9",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The regulated virtualization estate uses multiple clusters and delegated recovery operators. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0620",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-2db9ac975a825ef4",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The environment separates production and test clusters under one operations team. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0621",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-2f9bfcbc9aeebaa2",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The regulated virtualization estate uses multiple clusters and delegated recovery operators. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0622",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-3392c250bc15ac9c",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A customer portal runs on virtual machines requiring a secondary recovery location. The estate contains 24 virtual machines on two hosts. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0623",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-353870bb00ebd5c2",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The scope includes 90 virtual machines in a four-node cluster. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0624",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-3586a33e82d1d3a5",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The estate contains 24 virtual machines on two hosts. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0625",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-3926740769db2885",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The private cloud runs 220 virtual machines across two datacenters. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0626",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-41fb75de3cfd41f4",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A regulated application has documented disaster-recovery runbooks for its virtual-machine tiers. The scope includes 90 virtual machines in a four-node cluster. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0627",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-424c810fcf6cecb7",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The environment separates production and test clusters under one operations team. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0628",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-480f6bd9c92d5647",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The estate contains 24 virtual machines on two hosts. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0629",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-4a0d84448e8c51ec",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The private cloud runs 220 virtual machines across two datacenters. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0630",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-4a3138a3c595d436",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The regulated virtualization estate uses multiple clusters and delegated recovery operators. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0631",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-4e06b1f215d6b090",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The regulated virtualization estate uses multiple clusters and delegated recovery operators. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0632",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-542df4cfc7822348",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The private cloud runs 220 virtual machines across two datacenters. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0633",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-57aab4df1d59579c",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The private cloud runs 220 virtual machines across two datacenters. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0634",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-59291c830c3bd7b1",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The environment separates production and test clusters under one operations team. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0635",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-5a4cbe2774b603c9",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A customer portal runs on virtual machines requiring a secondary recovery location. The estate contains 24 virtual machines on two hosts. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0636",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-5b7477e36a159067",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The regulated virtualization estate uses multiple clusters and delegated recovery operators. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0637",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-5d5b7a515b5dc02c",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The private cloud runs 220 virtual machines across two datacenters. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0638",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-5dbda7aa3f40c1f7",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The scope includes 90 virtual machines in a four-node cluster. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0639",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-5f48578f4d043b0a",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The regulated virtualization estate uses multiple clusters and delegated recovery operators. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0640",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-6cfb8426a2fc842a",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A customer portal runs on virtual machines requiring a secondary recovery location. The estate contains 24 virtual machines on two hosts. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0641",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-6d41331b6629ca2e",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The estate contains 24 virtual machines on two hosts. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0642",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-6d92bbb1eb9857e9",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The environment separates production and test clusters under one operations team. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0643",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-7705cc6908f4de32",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The environment separates production and test clusters under one operations team. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0644",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-7a569bf9b8762440",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A regulated application has documented disaster-recovery runbooks for its virtual-machine tiers. The scope includes 90 virtual machines in a four-node cluster. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0645",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-7b1eab7d153e0989",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The environment separates production and test clusters under one operations team. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0646",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-804c76a0333f6a73",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The regulated virtualization estate uses multiple clusters and delegated recovery operators. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0647",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-81cb67cf98cd1c43",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The private cloud runs 220 virtual machines across two datacenters. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0648",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-86b6dd7a4b03f5e3",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The environment separates production and test clusters under one operations team. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0649",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-883256a34983e639",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The estate contains 24 virtual machines on two hosts. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0650",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-8b66c77e6298676a",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The scope includes 90 virtual machines in a four-node cluster. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0651",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-8f124abadb83e514",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The environment separates production and test clusters under one operations team. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0652",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-9135b916f3be32dd",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The private cloud runs 220 virtual machines across two datacenters. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0653",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-94b4b133fdfbec93",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The scope includes 90 virtual machines in a four-node cluster. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0654",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-951ecd3b5b8eaade",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The environment separates production and test clusters under one operations team. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0655",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-96190479b064df93",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The private cloud runs 220 virtual machines across two datacenters. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0656",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-977dd692c799b14b",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The environment separates production and test clusters under one operations team. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0657",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-97b93539da0758b7",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The estate contains 24 virtual machines on two hosts. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0658",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-98f897417403ba78",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The regulated virtualization estate uses multiple clusters and delegated recovery operators. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0659",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-9dc55a7aebf03208",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The regulated virtualization estate uses multiple clusters and delegated recovery operators. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0660",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-9e7610e8fa0b60ec",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A regulated application has documented disaster-recovery runbooks for its virtual-machine tiers. The scope includes 90 virtual machines in a four-node cluster. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0661",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-9eabb52fd0403023",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The estate contains 24 virtual machines on two hosts. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0662",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-9ed40d4c9e18a980",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A customer portal runs on virtual machines requiring a secondary recovery location. The private cloud runs 220 virtual machines across two datacenters. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0663",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-a1a4ce2e2d1b4a09",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A regulated application has documented disaster-recovery runbooks for its virtual-machine tiers. The environment separates production and test clusters under one operations team. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0664",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-a52716f97162acdf",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The private cloud runs 220 virtual machines across two datacenters. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0665",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-a6437b1993890dc4",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The environment separates production and test clusters under one operations team. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0666",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-abeff8bb97398ce6",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The environment separates production and test clusters under one operations team. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0667",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-ad76c1d3510866ae",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The regulated virtualization estate uses multiple clusters and delegated recovery operators. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0668",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-af1baece1ae0b550",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The scope includes 90 virtual machines in a four-node cluster. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0669",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-b093c364a1ea2f08",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The estate contains 24 virtual machines on two hosts. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0670",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-b17053cd554b4e6d",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The scope includes 90 virtual machines in a four-node cluster. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0671",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-b3a8e1e2964dffa1",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The environment separates production and test clusters under one operations team. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0672",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-b44c3a707933a06f",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A regulated application has documented disaster-recovery runbooks for its virtual-machine tiers. The environment separates production and test clusters under one operations team. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0673",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-b52969b73c00b5ad",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The private cloud runs 220 virtual machines across two datacenters. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0674",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-be8131493068fea4",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The environment separates production and test clusters under one operations team. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0675",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-bebd9d130b26a9e2",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The private cloud runs 220 virtual machines across two datacenters. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0676",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-c2d51d1f68cb26f5",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The estate contains 24 virtual machines on two hosts. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0677",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-c34d71a07c8ba86b",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The private cloud runs 220 virtual machines across two datacenters. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0678",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-c57ace31ec5da2c3",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The private cloud runs 220 virtual machines across two datacenters. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0679",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-c74d4ef95f87a393",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The estate contains 24 virtual machines on two hosts. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0680",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-cb3287a90f15313d",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The scope includes 90 virtual machines in a four-node cluster. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0681",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-cd23d48d218c8c1a",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A regulated application has documented disaster-recovery runbooks for its virtual-machine tiers. The scope includes 90 virtual machines in a four-node cluster. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0682",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-d0b68160d72da50b",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The scope includes 90 virtual machines in a four-node cluster. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0683",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-d1021f966dadac3c",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A customer portal runs on virtual machines requiring a secondary recovery location. The private cloud runs 220 virtual machines across two datacenters. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0684",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-d1227ee9cc9b0da8",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The private cloud runs 220 virtual machines across two datacenters. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0685",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-d3186154b027a076",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A customer portal runs on virtual machines requiring a secondary recovery location. The estate contains 24 virtual machines on two hosts. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0686",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-d9322b29d0febd5e",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The private cloud runs 220 virtual machines across two datacenters. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0687",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-df1834decaf2f4d7",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The regulated virtualization estate uses multiple clusters and delegated recovery operators. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0688",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-e117b43dce8b687c",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The environment separates production and test clusters under one operations team. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0689",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-e22d457665f2299f",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The private cloud runs 220 virtual machines across two datacenters. The recovery plan must start VM tiers in order and support planned failover testing."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0690",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-e64e2b34b920ddf5",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this design question, recommend DPM only when it is the appropriate backup platform. Name the correct alternative when it is not.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A regulated application has documented disaster-recovery runbooks for its virtual-machine tiers. The environment separates production and test clusters under one operations team. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0691",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-e73d91129627e830",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A regulated application has documented disaster-recovery runbooks for its virtual-machine tiers. The environment separates production and test clusters under one operations team. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0692",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-e8f467ec90e86488",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The estate contains 24 virtual machines on two hosts. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0693",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-e94e3a5472875ed2",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The scope includes 90 virtual machines in a four-node cluster. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0694",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-f2d1b588635e7df9",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer. Select DPM only when its supported backup capabilities match the requirement; otherwise select the better Microsoft service.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A regulated application has documented disaster-recovery runbooks for its virtual-machine tiers. The scope includes 90 virtual machines in a four-node cluster. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0695",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-f38e847667ec5232",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A datacenter hosts virtual machines with dependencies that determine their recovery order. The private cloud runs 220 virtual machines across two datacenters. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0696",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-f472c26b3deb7ad6",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: An infrastructure team operates virtual machines that need nondisruptive disaster-recovery testing. The environment separates production and test clusters under one operations team. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0697",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-f553841195e51de8",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A customer portal runs on virtual machines requiring a secondary recovery location. The private cloud runs 220 virtual machines across two datacenters. Administrators need test failover without affecting the production virtual machines."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Azure Site Recovery provides continuous replication and orchestrated failover, whereas DPM creates backup recovery points."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0698",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-f82ce93c511ff72e",
+    "category": "continuous_replication_asr",
+    "difficulty": "hard",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A multi-tier application runs on on-premises virtual machines that must restart in Azure after an outage. The private cloud runs 220 virtual machines across two datacenters. The service must fail over to a recovery site and later support reprotection and failback."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: Site Recovery supplies recovery plans, test failover, and workload restart at the recovery location."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0699",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-fa1dc9a8c85fa273",
+    "category": "continuous_replication_asr",
+    "difficulty": "easy",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the recovery requirement below. Decide whether to use System Center DPM or another Microsoft data-protection service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The environment separates production and test clusters under one operations team. It needs continuous replication to Azure and orchestrated failover during a datacenter outage."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}
+{
+    "id": "dpm-v3-train-0700",
+    "split": "train",
+    "scenario_group_id": "dpm-sg-fdfa4d428a036512",
+    "category": "continuous_replication_asr",
+    "difficulty": "medium",
+    "decision": "DO_NOT_USE_DPM",
+    "expected_service": "AZURE_SITE_RECOVERY",
+    "accepted_terms": [
+        "azure site recovery",
+        "site recovery"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Choose the best Microsoft protection architecture for this workload. Account for workload location, recovery behavior, and operational constraints.\n\nAnswer with exactly:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A manufacturing service depends on virtual machines that cannot wait for backup restoration after site loss. The regulated virtualization estate uses multiple clusters and delegated recovery operators. The business requires a low recovery-point objective based on ongoing replication rather than daily backups."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Do not use DPM; use Azure Site Recovery.\nReason: The stated requirement is disaster-recovery replication and failover rather than scheduled backup."
+        }
+    ]
+}

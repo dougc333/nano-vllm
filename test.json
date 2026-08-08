@@ -1,0 +1,325 @@
+{
+    "id": "dpm-test500-0176",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer.\n\nChoose DPM only when its workload and recovery capabilities fit. Otherwise, name the more appropriate Microsoft option.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: The following issue is raised in a post-incident resilience assessment: A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. Existing tooling matters only when it satisfies the requested recovery outcome."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0177",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this architecture question, recommend DPM only if it is the appropriate protection platform. If it is not, specify the correct Microsoft service.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A service decision is required during a datacenter exit decision. A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. A nearby Microsoft product may sound plausible but solve a different problem."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault; this directly matches the stated recovery requirement."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0178",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the following recovery design. Decide whether to use System Center DPM or a better-suited Microsoft service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: During a production outage retrospective, architects receive this case: A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. The response must not confuse synchronization with backup."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault, which makes it the best fit for this workload."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0179",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: As part of an independent architecture examination, evaluate this requirement: A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. The scenario includes operational context that may not affect the correct service."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault; the alternative would solve a different protection problem."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0180",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are selecting a Microsoft data-protection solution. Analyze the workload location, recovery objective, and management requirements before deciding whether DPM belongs in the design.\n\nAnswer with:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: Consider this scenario from a regulated workload assessment: A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. Retention duration alone does not determine whether a backup server is required."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0181",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer.\n\nChoose DPM only when its workload and recovery capabilities fit. Otherwise, name the more appropriate Microsoft option.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: The following issue is raised in a recovery platform selection: A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. The recommendation should avoid deploying unnecessary backup infrastructure."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault; this directly matches the stated recovery requirement."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0182",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this architecture question, recommend DPM only if it is the appropriate protection platform. If it is not, specify the correct Microsoft service.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A service decision is required during a final technical recommendation. A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. The decision should reflect application-aware protection needs where stated."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault, which makes it the best fit for this workload."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0183",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the following recovery design. Decide whether to use System Center DPM or a better-suited Microsoft service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: During a cross-team recovery exercise, architects receive this case: A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. The presence of Azure connectivity must not be mistaken for a failover requirement."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault; the alternative would solve a different protection problem."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0184",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are an Azure architecture assistant.\n\nDetermine whether Microsoft System Center Data Protection Manager (DPM) should be used. If DPM is inappropriate, identify the better Microsoft service or architecture.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: As part of a supportability investigation, evaluate this requirement: A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. The service selection will be graded on both recommendation and reasoning."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0185",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "You are selecting a Microsoft data-protection solution. Analyze the workload location, recovery objective, and management requirements before deciding whether DPM belongs in the design.\n\nAnswer with:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: Consider this scenario from a hybrid-cloud resilience test: A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. The least operationally complex valid design should be identified."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault; this directly matches the stated recovery requirement."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0186",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Act as a Microsoft backup architecture reviewer.\n\nChoose DPM only when its workload and recovery capabilities fit. Otherwise, name the more appropriate Microsoft option.\n\nReturn exactly two lines:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: The following issue is raised in an executive risk review: A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. The recovery objective is more important than the organization's size."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault, which makes it the best fit for this workload."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0187",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "For this architecture question, recommend DPM only if it is the appropriate protection platform. If it is not, specify the correct Microsoft service.\n\nReply in exactly this format:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: A service decision is required during a failover and restore comparison. A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. A correct answer must account for whether a managed native service exists."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault; the alternative would solve a different protection problem."
+        }
+    ]
+}
+{
+    "id": "dpm-test500-0188",
+    "split": "test",
+    "category": "existing_dpm_azure_copy",
+    "difficulty": "hard",
+    "decision": "USE_DPM",
+    "expected_service": "DPM_MARS",
+    "accepted_terms": [
+        "dpm",
+        "mars",
+        "recovery services vault"
+    ],
+    "prompt": [
+        {
+            "role": "user",
+            "content": "Evaluate the following recovery design. Decide whether to use System Center DPM or a better-suited Microsoft service.\n\nUse this exact response structure:\nRecommendation: <recommendation>\nReason: <one concise reason>\n\nScenario: During a retention architecture examination, architects receive this case: A company has working DPM protection groups, dedicated local backup disks, and an ExpressRoute circuit. Its new requirement is an Azure copy of monthly recovery points with the fewest infrastructure changes. The architecture must remain within supported Microsoft recovery patterns."
+        }
+    ],
+    "completion": [
+        {
+            "role": "assistant",
+            "content": "Recommendation: Keep DPM and add the MARS agent for Azure online protection.\nReason: The organization can preserve its existing local DPM recovery workflow while copying selected recovery points to a Recovery Services vault."
+        }
+    ]
+}
