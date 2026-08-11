@@ -29,25 +29,30 @@ dist.init_process_group("gloo", rank=0, world_size=1)
 
 from transformers import Qwen3MoeConfig, Qwen3MoeForCausalLM
 
-# ── 2. Shims for nanovllm's GPU-only imports (kernels never run — eager) ──
+# ── 2. Shim flash_attn (not installed); shim triton ONLY if absent. On a GPU
+# box torch.cuda lazy-init calls into the real triton, so our fake would crash
+# it (DeferredCudaCallError: triton.__spec__ is None). ──────────────────────
 _flash = types.ModuleType("flash_attn")
 _flash.flash_attn_varlen_func = lambda *a, **k: (_ for _ in ()).throw(NotImplementedError())
 _flash.flash_attn_with_kvcache = lambda *a, **k: (_ for _ in ()).throw(NotImplementedError())
 sys.modules["flash_attn"] = _flash
 
-_lang = types.ModuleType("triton.language")
-_lang.dtype = type("dtype", (), {})
-_lang.constexpr = type("constexpr", (), {})
-_lang.float32 = _lang.dtype()
-_lang.float16 = _lang.dtype()
-_lang.int32 = _lang.dtype()
-_lang.int64 = _lang.dtype()
-_triton = types.ModuleType("triton")
-_triton.jit = lambda fn: fn
-_triton.kernel = lambda fn: fn
-_triton.language = _lang
-sys.modules["triton.language"] = _lang
-sys.modules["triton"] = _triton
+try:
+    import triton  # noqa: F401  real one present (GPU box) — leave it intact
+except ImportError:
+    _lang = types.ModuleType("triton.language")
+    _lang.dtype = type("dtype", (), {})
+    _lang.constexpr = type("constexpr", (), {})
+    _lang.float32 = _lang.dtype()
+    _lang.float16 = _lang.dtype()
+    _lang.int32 = _lang.dtype()
+    _lang.int64 = _lang.dtype()
+    _triton = types.ModuleType("triton")
+    _triton.jit = lambda fn: fn
+    _triton.kernel = lambda fn: fn
+    _triton.language = _lang
+    sys.modules["triton.language"] = _lang
+    sys.modules["triton"] = _triton
 
 from nanovllm.models.qwen3_moe import Qwen3MoeForCausalLM as NvQwen3MoeForCausalLM
 from nanovllm.models.qwen3 import Qwen3Attention
