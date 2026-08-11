@@ -41,6 +41,19 @@ import safetensors.torch as st
 from nanovllm.llm import LLM
 from nanovllm.sampling_params import SamplingParams
 
+# Deterministic comparison: transformers `do_sample=False` is strict argmax,
+# while nano-vllm's Sampler uses Gumbel-max (argmax of probs/exp). These agree
+# except on near-tied logits — and a RANDOM tiny model is full of near-ties, so
+# sampled tokens diverge spuriously. Force strict argmax for a fair, reproducible
+# comparison (this only affects this test's sampling, not production behavior).
+import nanovllm.layers.sampler as _sampler_mod
+
+def _strict_argmax_forward(self, logits, temperatures):
+    logits = logits.float().div_(temperatures.unsqueeze(dim=1))
+    return torch.softmax(logits, dim=-1).argmax(dim=-1)
+
+_sampler_mod.Sampler.forward = _strict_argmax_forward
+
 MODEL_DIR = "/tmp/moe_gpu_test"
 
 # ── 1. Build a tiny Qwen3-MoE (bf16, like production) + hub-layout checkpoint ──

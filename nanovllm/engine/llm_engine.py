@@ -36,6 +36,11 @@ class LLMEngine:
         atexit.register(self.exit)
 
     def exit(self):
+        # Idempotent: exit() is both called explicitly by the user/tests AND
+        # registered as an atexit callback, so it can run twice. Guard against
+        # the second call after model_runner was already deleted.
+        if not hasattr(self, "model_runner"):
+            return
         self.model_runner.call("exit")
         del self.model_runner
         for p in self.ps:
