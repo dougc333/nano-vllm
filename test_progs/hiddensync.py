@@ -34,7 +34,7 @@ with profile(
         results.append(x + torch.tensor(1.0))
 
     with record_function("05_tensor_from_python_list"):
-        results.append(
+        results.append(git 
             torch.tensor([0.0, 1.0, 2.0], device="cuda")
         )
 
